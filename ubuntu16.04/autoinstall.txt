@@ -100,7 +100,7 @@ chown www-data:www-data /opt/faveo -R && updatedb && \
 
 # poping up nano for the user to edit server_name value
 printf "\n\E[1m I will open up a text editor, you need to change the server_name value to match your server \E[0m\n";
-curl http://ladybirdweb.com/support/uploads/ubuntu16.04/nginx-help;
+curl http://ladybirdweb.com/support/uploads/ubuntu16.04/nginx-help.txt;
 printf "\n\E[1m Using nano editor, CTRL+O saves the file. CTRL+X to exit. \E[0m\n";
 getAttention;
 nano /etc/nginx/conf.d/faveo-helpdesk.conf && \
